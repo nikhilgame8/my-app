@@ -64,7 +64,7 @@ const TopNews = (props) => {
                     Netflix . 12 minutes ago
                   </span>
                 </div>
-                <div className="md:text-3xl text-2xl font-bold font-serif">
+                <div className="md:text-3xl text-2xl font-bold ">
                   Where To Watch &apos;John Wick: Chapter 4&apos; {index}
                 </div>
                 <p className="text-gray-500">

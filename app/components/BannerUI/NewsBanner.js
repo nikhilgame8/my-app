@@ -31,7 +31,7 @@ const NewsBanner = () => {
             </div>
             <div className="text-xs">Formula 1 . 3 hours ago</div>
           </div>
-          <div className="font-bold text-2xl font-serif leading-none">
+          <div className="font-bold text-2xl  leading-none">
             Amet non nulla tempor ut cupidatat.
           </div>
           <p className=" text-sm line-clamp-4">

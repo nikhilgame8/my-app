@@ -4,7 +4,7 @@ import React from "react";
 const SecondaryHeading = (props) => {
   return (
     <div className="flex justify-between items-center my-4">
-      <h2 className="font-semibold lg:text-3xl text-2xl">{props.title}</h2>
+      <h2 className="font-bold text-2xl">{props.title}</h2>
       <div className="text-red-600 items-center font-semibold flex cursor-pointer">
         <div>
           See all{" "}

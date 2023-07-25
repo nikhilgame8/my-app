@@ -13,7 +13,7 @@ const Navbar = () => {
               className="h-8 mr-3"
               alt="Flowbite Logo"
             /> */}
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-red-600 font-serif">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-red-600 ">
               Flowbite
             </span>
           </a>

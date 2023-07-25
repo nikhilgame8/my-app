@@ -31,7 +31,7 @@ const NewsCard = (props) => {
           </div>
           <div className="text-xs text-gray-500">Formula 1 . 3 hours ago</div>
         </div>
-        <div className="font-bold text-lg font-serif leading-none">Amet non nulla tempor ut cupidatat.</div>
+        <div className="font-bold text-lg  leading-none">Amet non nulla tempor ut cupidatat.</div>
         <p className="text-gray-500 text-sm line-clamp-4">Adipisicing anim nostrud sunt sunt culpa eu ad Lorem ea non. Exercitation excepteur consectetur aliquip Lorem id est minim ad in consequat irure mollit enim. Elit non in cupidatat veniam ad. Officia deserunt sunt id nulla id aute esse fugiat.</p>
         <div className="text-gray-500 text-sm"><span className="text-red-600 font-semibold">Sports</span> . 8 min read</div>
       </div>

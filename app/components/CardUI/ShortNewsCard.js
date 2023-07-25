@@ -30,7 +30,7 @@ const ShortNewsCard = (props) => {
           </div>
           <div className="text-xs text-gray-500">Formula 1 . 3 hours ago</div>
         </div>
-        <div className="font-bold text-base font-serif leading-none">
+        <div className="font-bold text-base  leading-none">
           Amet non nulla tempor ut cupidatat.
         </div>
         <div className="text-gray-500 text-xs">

@@ -114,7 +114,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <section className="flex md:flex-row flex-col">
           <div>
             <SecondaryHeading title={"Business"} />
             <div className="grid grid-cols-2 gap-4">
@@ -125,6 +125,7 @@ export default function Home() {
               ))}
             </div>
           </div>
+          <div className=" border-dashed border-l-2 mx-2 w-2 hidden md:block"></div>
           <div>
             <SecondaryHeading title={"Sport News"} />
             <div className="grid grid-cols-2 gap-4">

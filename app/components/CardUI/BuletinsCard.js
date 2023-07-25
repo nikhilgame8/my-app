@@ -4,7 +4,7 @@ import React from "react";
 const BuletinsCard = () => {
   return (
     <div>
-      <div className="relative h-16 w-16 mx-auto border-2 cursor-pointer border-red-600 rounded-full">
+      <div className="relative h-20 w-20 mx-auto border-2 cursor-pointer border-red-600 rounded-full">
         <Image
           src={
             "https://res.cloudinary.com/pollpe-in/image/upload/v1685808325/blog_1_t14tf0.jpg"
