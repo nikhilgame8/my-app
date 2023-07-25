@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const NewsCard = (props) => {
   return (
-    <div>
+    <Link href="/blog/blog-detail-page" >
       <div>
         <Image
           src={
@@ -35,7 +36,7 @@ const NewsCard = (props) => {
         <p className="text-gray-500 text-sm line-clamp-4">Adipisicing anim nostrud sunt sunt culpa eu ad Lorem ea non. Exercitation excepteur consectetur aliquip Lorem id est minim ad in consequat irure mollit enim. Elit non in cupidatat veniam ad. Officia deserunt sunt id nulla id aute esse fugiat.</p>
         <div className="text-gray-500 text-sm"><span className="text-red-600 font-semibold">Sports</span> . 8 min read</div>
       </div>
-    </div>
+    </Link>
   );
 };
 

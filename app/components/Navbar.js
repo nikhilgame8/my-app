@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 left-0 w-full z-50">
+    <div className="sticky top-0 left-0 w-full z-50">
       <nav className="bg-white border-gray-200 shadow">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-[1140px] flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" className="flex items-center">
             {/* <img
               src="https://flowbite.com/docs/images/logo.svg"
