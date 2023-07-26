@@ -10,7 +10,7 @@ const ShortNewsCard = (props) => {
             "https://res.cloudinary.com/pollpe-in/image/upload/v1685808325/blog_1_t14tf0.jpg"
           }
           fill
-          style={{ borderRadius: "10px", objectFit: "cover" }}
+          style={{ borderRadius: "5px", objectFit: "cover" }}
           quality={75}
           alt="homepage image"
         />
@@ -28,7 +28,7 @@ const ShortNewsCard = (props) => {
               alt="homepage image"
             />
           </div>
-          <div className="text-xs text-gray-500">Formula 1 . 3 hours ago</div>
+          <div className="text-xs text-gray-500 flex items-center">Formula 1 <span class="h-2 w-2 mx-2 my-auto rounded-full bg-gray-300"></span> 3 hours ago</div>
         </div>
         <div className="font-bold text-base  leading-none">
           Amet non nulla tempor ut cupidatat.

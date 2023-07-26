@@ -1,13 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import ProgressBar from "./ProgressBar";
 import Image from "next/image";
 
 const Navbar = () => {
+  const [userProfile, setUserProfile] = useState(false);
+
   return (
     <div className="sticky top-0 left-0 w-full z-50">
       <nav className="bg-white border-gray-200 shadow">
         <div className="max-w-[1140px] flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="https://flowbite.com/" className="flex items-center">
+          <a href="/" className="flex items-center">
             {/* <img
               src="https://flowbite.com/docs/images/logo.svg"
               className="h-8 mr-3"
@@ -27,7 +30,10 @@ const Navbar = () => {
               data-dropdown-placement="bottom"
             >
               <span className="sr-only">Open user menu</span>
-              <div className="w-8 h-8 relative">
+              <div
+                className="w-8 h-8 relative"
+                onClick={() => setUserProfile(!userProfile)}
+              >
                 <Image
                   style={{ objectFit: "cover", borderRadius: "100%" }}
                   fill
@@ -38,11 +44,13 @@ const Navbar = () => {
               </div>
             </button>
             <div
-              className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow  "
+              className={userProfile ? "z-50 transition-all ease-in-out delay-75 absolute top-8 right-10 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow opacity-1" : "z-50 transition-all ease-in-out delay-75 absolute top-8 right-10 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow opacity-0"}
               id="user-dropdown"
             >
               <div className="px-4 py-3">
-                <span className="block text-sm text-gray-900">Bonnie Green</span>
+                <span className="block text-sm text-gray-900">
+                  Bonnie Green
+                </span>
                 <span className="block text-sm  text-gray-500 truncate">
                   name@flowbite.com
                 </span>
@@ -114,7 +122,7 @@ const Navbar = () => {
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
               <li>
                 <a
-                  href="#"
+                  href="/"
                   className="block py-2 pl-3 pr-4 text-white bg-red-600 rounded md:bg-transparent md:text-red-600 md:p-0"
                   aria-current="page"
                 >

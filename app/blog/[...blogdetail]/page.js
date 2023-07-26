@@ -3,6 +3,7 @@ import NewsCard from "@/app/components/CardUI/NewsCard";
 import ShortNewsCard from "@/app/components/CardUI/ShortNewsCard";
 import TopCreator from "@/app/components/CardUI/TopCreator";
 import SecondaryHeading from "@/app/components/SecondaryHeading";
+import BlogWidget from "@/app/components/WidgetUI/BlogWidget";
 import { AtSymbolIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import React from "react";
@@ -39,19 +40,19 @@ const page = () => {
   ];
   return (
     <>
-      <div className="max-w-[1140px] mx-auto">
+      <div className="max-w-[1140px] mx-auto carousel-animation-show">
         <Breadcrumbs />
-        <div className="flex">
+        <div className="lg:flex">
           <div className="max-w-[772px] md:mx-auto divide-y-2 px-4 space-y-8 my-4">
             <main className="space-y-4">
               <h1 className="text-3xl font-bold ">
                 Do exercitation quis duis eu sint.
               </h1>
-              <div className="flex justify-between">
+              <div className="flex flex-col sm:flex-row justify-between">
                 <div className="text-sm flex items-center gap-1">
                   Published in <AtSymbolIcon className="h-4 w-4" />{" "}
-                  DigitalArtsMedia{" "}
-                  <span className="text-gray-500"> - 25 July 2023</span>
+                  <span className="font-semibold">DigitalArtsMedia</span>{" "}
+                  <span class="h-2 w-2 mx-2 rounded-full bg-gray-300"></span><span className="text-gray-500"> 25 July 2023</span>
                 </div>
                 <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                   <a href="#" className="text-gray-500 hover:text-gray-900">
@@ -134,7 +135,7 @@ const page = () => {
               </div>
               <div className="flex justify-between items-center">
                 <TopCreator person={people[0]} />
-                <div className="text-sm text-gray-500">2 minute read</div>
+                <div className="text-sm text-gray-500 flex items-center"><span class="h-2 w-2 mx-2 my-auto rounded-full bg-gray-300"></span> 2 minute read</div>
               </div>
               <div>
                 <div className="mx-auto">
@@ -186,19 +187,19 @@ const page = () => {
             </main>
             <section>
               <SecondaryHeading title={"Related Articles"} />
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {latestNewsData.slice(0, 3).map((item, index) => (
-                  <div key={index}>
+                  <div key={index} className="flex justify-center">
                     <NewsCard index={index} />
                   </div>
                 ))}
               </div>
             </section>
           </div>
-          <div className="my-2">
-            <section>
+          <section className="my-2 px-4 mx-auto max-w-[772px]">
+            <div>
               <SecondaryHeading title={"Related Articles"} />
-              <div className="md:col-span-2 gap-4 grid sm:grid-cols-2 md:grid-cols-1">
+              <div className="md:col-span-2 gap-4 grid sm:grid-cols-2 lg:grid-cols-1 grid-cols-1">
                 {shortNewsData.map((item, index) => (
                   <div key={index}>
                     <ShortNewsCard />
@@ -206,8 +207,11 @@ const page = () => {
                   </div>
                 ))}
               </div>
-            </section>
-          </div>
+            </div>
+            <div className="my-4">
+              <BlogWidget newArticle={latestNewsData} />
+            </div>
+          </section>
         </div>
       </div>
     </>

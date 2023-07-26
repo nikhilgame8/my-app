@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="max-w-[1140px] md:mx-auto px-4 space-y-8 my-6">
+      <div className="max-w-[1140px] md:mx-auto px-4 space-y-8 my-6 carousel-animation-show">
         <section className="bg-gray-100 mx-auto rounded-lg min-h-[150px]  flex flex-col items-center justify-center">
           <h1 className="text-center font-medium uppercase text-gray-500 text-sm tracking-widest">
             WELCOME TO BULETIN
