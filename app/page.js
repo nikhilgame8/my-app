@@ -124,7 +124,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className=" border-dashed border-l-2 mx-2 w-2 hidden md:block"></div>
+          <div className=" border-dashed border-l-2 mx-4 w-2 hidden md:block"></div>
           <div>
             <SecondaryHeading title={"Sport News"} />
             <div className="grid grid-cols-2 gap-4">

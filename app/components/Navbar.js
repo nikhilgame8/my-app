@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import ProgressBar from "./ProgressBar";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [userProfile, setUserProfile] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
     <div className="sticky top-0 left-0 w-full z-50">
       <nav className="bg-white border-gray-200 shadow">
         <div className="max-w-[1140px] flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             {/* <img
               src="https://flowbite.com/docs/images/logo.svg"
               className="h-8 mr-3"
@@ -19,7 +20,7 @@ const Navbar = () => {
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-red-600 ">
               Flowbite
             </span>
-          </a>
+          </Link>
           <div className="flex items-center md:order-2">
             <button
               type="button"
@@ -57,36 +58,36 @@ const Navbar = () => {
               </div>
               <ul className="py-2" aria-labelledby="user-menu-button">
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Dashboard
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Settings
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Earnings
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Sign out
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -121,45 +122,45 @@ const Navbar = () => {
           >
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
               <li>
-                <a
+                <Link
                   href="/"
                   className="block py-2 pl-3 pr-4 text-white bg-red-600 rounded md:bg-transparent md:text-red-600 md:p-0"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/about"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 :-500 -700  md: "
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0"
                 >
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -16,7 +16,7 @@ const ShortNewsCard = (props) => {
         />
       </div>
       <div className="space-y-2">
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-2 items-center">
           <div className="relative h-5 w-5">
             <Image
               src={
@@ -30,7 +30,7 @@ const ShortNewsCard = (props) => {
           </div>
           <div className="text-xs text-gray-500 flex items-center">Formula 1 <span class="h-2 w-2 mx-2 my-auto rounded-full bg-gray-300"></span> 3 hours ago</div>
         </div>
-        <div className="font-bold text-base  leading-none">
+        <div className="font-bold text-sm  leading-none">
           Amet non nulla tempor ut cupidatat.
         </div>
         <div className="text-gray-500 text-xs">
