@@ -11,7 +11,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="max-w-[1140px] md:mx-auto px-4 space-y-12 my-6">
+    <div className="max-w-[1140px] md:mx-auto px-4 space-y-12 my-6 carousel-animation-show">
       <section className="flex justify-between">
         <div className="w-1/2 space-y-4">
           <div className="text-lg font-bold text-red-600">About</div>
