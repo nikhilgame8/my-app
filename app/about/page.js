@@ -12,14 +12,14 @@ import React from "react";
 const page = () => {
   return (
     <div className="max-w-[1140px] md:mx-auto px-4 space-y-12 my-6 carousel-animation-show">
-      <section className="flex justify-between">
-        <div className="w-1/2 space-y-4">
+      <section className="sm:flex space-y-4 gap-4 justify-between">
+        <div className="sm:w-1/2 space-y-4">
           <div className="text-lg font-bold text-red-600">About</div>
-          <h1 className="text-2xl font-black  text-justify">
+          <h1 className="text-2xl font-black">
             Cupidatat duis dolore elit cupidatat. Velit in proident anim enim
             fugiat enim aute nisi duis. Commodo veniam magna quis quis pariatur.
           </h1>
-          <p className=" text-justify">
+          <p className="">
             Tempor aliqua in ad anim sit amet culpa elit anim irure Lorem. Magna
             id proident et id id mollit tempor Lorem mollit. Esse labore quis
             culpa cupidatat cupidatat esse eiusmod quis. Id eu esse est proident
@@ -28,21 +28,22 @@ const page = () => {
             ullamco ipsum ad sit id officia aliquip minim consectetur.
           </p>
         </div>
-        <div>
+        <div className="relative h-[312px] md:w-[472px] w-full">
           <Image
             src={
               "https://res.cloudinary.com/pollpe-in/image/upload/v1685808325/blog_1_t14tf0.jpg"
             }
-            width={472}
-            style={{ borderRadius: "10px" }}
-            height={312}
+            style={{ borderRadius: "10px", objectFit: "cover" }}
+            // width={472}
+            // height={312}
+            fill
             quality={75}
             alt="homepage image"
           />
         </div>
       </section>
-      <section className="flex relative justify-between gap-4">
-        <div className="absolute border-b border-gray-300 top-5 w-full"></div>
+      <section className="sm:flex relative justify-between space-y-4 gap-4">
+        <div className="absolute border-b border-gray-300 top-8 hidden sm:block w-full"></div>
         <div className="space-y-4 z-20">
           <div className="text-white bg-black inline-block p-3 font-bold rounded-full">
             <FlagIcon className="h-4 w-4" />
@@ -74,8 +75,8 @@ const page = () => {
           </p>
         </div>
       </section>
-      <section className="flex justify-between gap-6">
-        <div className="w-1/2 shrink-0 space-y-4">
+      <section className="sm:flex space-y-4 justify-between gap-6">
+        <div className="sm:w-1/2 shrink-0 space-y-4">
           <div className="font-bold text-lg">Our Mission</div>
           <p className=" text-justify">
             Adipisicing sint pariatur deserunt occaecat eiusmod. Officia mollit

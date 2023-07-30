@@ -33,7 +33,7 @@ const NewsCard = (props) => {
             </div>
             <div className="text-xs text-gray-500 flex items-center">
               Formula 1{" "}
-              <span class="h-2 w-2 mx-2 rounded-full bg-gray-300"></span> 3
+              <span className="h-2 w-2 mx-2 rounded-full bg-gray-300"></span> 3
               hours ago
             </div>
           </div>

@@ -49,10 +49,15 @@ const page = () => {
                 Do exercitation quis duis eu sint.
               </h1>
               <div className="flex flex-col sm:flex-row justify-between">
-                <div className="text-sm flex items-center gap-1">
-                  Published in <AtSymbolIcon className="h-4 w-4" />{" "}
-                  <span className="font-semibold">DigitalArtsMedia</span>{" "}
-                  <span class="h-2 w-2 mx-2 rounded-full bg-gray-300"></span><span className="text-gray-500"> 25 July 2023</span>
+                <div className="text-sm flex flex-col sm:flex-row sm:items-center gap-1">
+                  <div className="flex items-center gap-1">
+                    Published in <AtSymbolIcon className="h-4 w-4" />{" "}
+                    <span className="font-semibold">DigitalArtsMedia</span>{" "}
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <span className="h-2 w-2 mx-2 hidden rounded-full sm:block bg-gray-300"></span>
+                    <span className="text-gray-500"> 25 July 2023</span>
+                  </div>
                 </div>
                 <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                   <a href="#" className="text-gray-500 hover:text-gray-900">
@@ -135,7 +140,10 @@ const page = () => {
               </div>
               <div className="flex justify-between items-center">
                 <TopCreator person={people[0]} />
-                <div className="text-sm text-gray-500 flex items-center"><span class="h-2 w-2 mx-2 my-auto rounded-full bg-gray-300"></span> 2 minute read</div>
+                <div className="text-sm text-gray-500 flex items-center">
+                  <span className="h-2 w-2 mx-2 my-auto rounded-full bg-gray-300"></span>{" "}
+                  2 minute read
+                </div>
               </div>
               <div>
                 <div className="mx-auto">

@@ -18,7 +18,7 @@ const Navbar = () => {
               alt="Flowbite Logo"
             /> */}
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-red-600 ">
-              Flowbite
+              Blog Dev
             </span>
           </Link>
           <div className="flex items-center md:order-2">

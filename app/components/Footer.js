@@ -15,7 +15,7 @@ const Footer = () => {
                   alt="FlowBite Logo"
                 /> */}
                 <span className="self-center text-2xl font-semibold whitespace-nowrap text-red-600 ">
-                  Flowbite
+                  Blog Dev
                 </span>
               </a>
             </div>
@@ -83,8 +83,8 @@ const Footer = () => {
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center">
               © 2023{" "}
-              <a href="https://flowbite.com/" className="hover:underline">
-                Flowbite™
+              <a href="https://my-blog-three-pi.vercel.app/" className="hover:underline">
+                Blog Dev™
               </a>
               . All Rights Reserved.
             </span>

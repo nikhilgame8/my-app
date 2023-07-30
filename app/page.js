@@ -77,11 +77,8 @@ export default function Home() {
         <section>
           <SecondaryHeading title={"Must Read"} />
           <div className="grid md:grid-cols-8 grid-cols-1 gap-4">
-            <div className="md:col-span-2 grid md:grid-cols-1 grid-cols-2 gap-4">
+            <div className="md:col-span-2">
               <div>
-                <NewsCard />
-              </div>
-              <div className="block md:hidden">
                 <NewsCard />
               </div>
             </div>
@@ -116,7 +113,7 @@ export default function Home() {
         <section className="flex md:flex-row flex-col">
           <div>
             <SecondaryHeading title={"Business"} />
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {latestNewsData.slice(0, 2).map((item, index) => (
                 <div key={index}>
                   <NewsCard index={index} />
@@ -127,7 +124,7 @@ export default function Home() {
           <div className=" border-dashed border-l-2 mx-4 w-2 hidden md:block"></div>
           <div>
             <SecondaryHeading title={"Sport News"} />
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {latestNewsData.slice(0, 2).map((item, index) => (
                 <div key={index}>
                   <NewsCard index={index} />
@@ -140,7 +137,7 @@ export default function Home() {
           <SecondaryHeading title={"Top Creator"} />
           <ul
             role="list"
-            className="grid gap-x-4 gap-y-4 grid-cols-2 md:grid-cols-4"
+            className="grid gap-x-4 gap-y-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4"
           >
             {people.map((person, index) => (
               <li key={index}>
